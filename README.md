@@ -34,21 +34,48 @@ The core neural network logic, including all the matrix math for forward and bac
 
 ## 🚀 How to Run on Google AI Studio 🚀
 
-This project is designed to be run directly within Google AI Studio. You can easily get it running by following these steps:
+This project is designed to be run directly within Google AI Studio by uploading a `.zip` file. Follow these steps carefully to ensure the file structure is correct.
+
+### Step 1: Download the Project from GitHub
+
+1.  On the main page of this GitHub repository, click the green **`< > Code`** button.
+2.  In the dropdown menu, select **`Download ZIP`**.
+3.  Save the file (`interactive-neural-network-playground-main.zip` or similar) to your computer.
+
+### Step 2: Prepare the ZIP for AI Studio
+
+This is the most important step. AI Studio requires the `index.html` file to be at the top level of the zip file, but the GitHub download puts it inside a folder.
+
+1.  **Unzip the downloaded file.** You will now have a folder named something like `interactive-neural-network-playground-main`.
+
+2.  **Open the folder.** Navigate *inside* the `interactive-neural-network-playground-main` folder. You should see all the project files and folders (`index.html`, `App.tsx`, `components`, `services`, etc.).
+
+3.  **Select the application files.** Select **all** the files and folders *inside* this directory that are needed for the app.
+    -   **Include:** `App.tsx`, `components/`, `constants.ts`, `docs/`, `index.html`, `index.tsx`, `metadata.json`, `README.md`, `services/`, `types.ts`
+    -   **Do not go back up and select the parent folder.** Stay inside `interactive-neural-network-playground-main`.
+
+4.  **Create the new ZIP file.** With all the app files selected, right-click and choose:
+    -   **Windows:** `Send to > Compressed (zipped) folder`.
+    -   **Mac:** `Compress [X] items`.
+    
+5.  **Rename the new ZIP file** to something clear, like `aistudio-upload.zip`.
+
+> **CRITICAL:** By zipping the contents directly, you ensure that `index.html` is at the root of your new zip file, which is what AI Studio needs.
+
+### Step 3: Upload and Run in AI Studio
 
 1.  **Go to Google AI Studio:** Open your web browser and navigate to [aistudio.google.com](https://aistudio.google.com).
 
-2.  **Create a New Project:** If you don't have one open already, create a new project.
+2.  **Create a New Project:** Start a blank, new project.
 
-3.  **Copy the Project Files:** Copy the full content of each file from this repository (`index.html`, `index.tsx`, `App.tsx`, etc.) and create corresponding files with the same names and content in your AI Studio project's file explorer.
+3.  **Upload Your ZIP:** Find the option to upload files (often a button or a drag-and-drop area) and select the `aistudio-upload.zip` file you created in the previous step.
 
-4.  **Run the App:** AI Studio will automatically detect the `index.html` file, build the project, and launch the application in the preview panel on the right-hand side of the screen.
+4.  **Run the App:** AI Studio will automatically unzip the files, build the project, and launch the application in the preview panel.
 
 5.  **Interact:** You can now interact with the live application!
     -   Start with the **Interactive Demo** tab for a guided tour of the fundamentals.
     -   Move to the **Simple (FFNN)** tab and click "Start Training" to see the full process in action.
     -   Explore the other tabs to see how memory (RNN, GRU, LSTM) improves the model's ability to learn.
-
 
 ## Technical Deep Dive
 
@@ -59,7 +86,3 @@ For those interested in the code, here are the key files to look at:
 -   `components/InteractiveDemo.tsx`: The self-contained component for the detailed, step-by-step FFNN visualization.
 -   `services/wordValidator.ts`: Contains the rule-based engine based on English phonotactics that determines if a generated word is "good" for the Auto Coach feature.
 -   `services/bpe.ts` & `services/customTokenizer.ts`: The logic for the BPE and Custom tokenization methods.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
