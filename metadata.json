@@ -1,0 +1,5 @@
+{
+  "name": "Sharing - Tiny Language Model Trainer v1.4",
+  "description": "An educational app to showcase the basics of building and training a small-scale, character-level language model. It visualizes the training process step-by-step to demystify how language models learn.",
+  "requestFramePermissions": []
+}
