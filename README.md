@@ -1,13 +1,8 @@
-
 # Interactive Neural Network Playground
 
 **Train character-level language models from scratch, right in your browser. An educational tool to demystify how AI learns language.**
 
 ---
-
-### 🚀 [View the Live Demo on Google AI Studio](https://aistudio.google.com/app/project/shared-L1zhcWpL-D9V) 🚀
-
-*(Note: The link above will take you to Google AI Studio where you can run the application directly in your browser.)*
 
 ![Interactive Neural Network Playground Demo](https://storage.googleapis.com/aistudio-project-assets/github_readme_assets/nn-playground-demo.gif)
 
@@ -37,21 +32,23 @@ The core neural network logic, including all the matrix math for forward and bac
 -   **Cyclical Training:** Automate a full cycle of training and auto-coaching to create a powerful feedback loop for model improvement.
 -   **Save & Load Models:** Save your trained model's state to a file and load it back later to continue your work.
 
-## How to Run on Google AI Studio
+## 🚀 How to Run on Google AI Studio 🚀
 
-Viewing and running this project is simple with Google AI Studio.
+This project is designed to be run directly within Google AI Studio. You can easily get it running by following these steps:
 
-1.  **Click the Link:** Click this link to open the project in AI Studio:
-    > ### [https://aistudio.google.com/app/project/shared-L1zhcWpL-D9V](https://aistudio.google.com/app/project/shared-L1zhcWpL-D9V)
+1.  **Go to Google AI Studio:** Open your web browser and navigate to [aistudio.google.com](https://aistudio.google.com).
 
-2.  **Open the Project:** AI Studio will load the project's code and environment.
+2.  **Create a New Project:** If you don't have one open already, create a new project.
 
-3.  **Run the App:** The application will automatically build and launch in the preview panel on the right-hand side of the screen.
+3.  **Copy the Project Files:** Copy the full content of each file from this repository (`index.html`, `index.tsx`, `App.tsx`, etc.) and create corresponding files with the same names and content in your AI Studio project's file explorer.
 
-4.  **Interact:** You can now interact with the live application!
+4.  **Run the App:** AI Studio will automatically detect the `index.html` file, build the project, and launch the application in the preview panel on the right-hand side of the screen.
+
+5.  **Interact:** You can now interact with the live application!
     -   Start with the **Interactive Demo** tab for a guided tour of the fundamentals.
     -   Move to the **Simple (FFNN)** tab and click "Start Training" to see the full process in action.
     -   Explore the other tabs to see how memory (RNN, GRU, LSTM) improves the model's ability to learn.
+
 
 ## Technical Deep Dive
 
