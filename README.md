@@ -4,7 +4,11 @@
 
 ---
 
-![Interactive Neural Network Playground Demo](https://storage.googleapis.com/aistudio-project-assets/github_readme_assets/nn-playground-demo.gif)
+![Interactive Neural Network Playground Demo]
+<img width="1863" height="919" alt="Screenshot 2025-11-11 234939" src="https://github.com/user-attachments/assets/f1437376-4e09-4b01-b6a5-b5b98c01ccb5" />
+<img width="1842" height="911" alt="Screenshot 2025-11-11 235008" src="https://github.com/user-attachments/assets/7b9d075c-e379-4d42-9e1c-55a60c0de61e" />
+
+
 
 ## About The Project
 
